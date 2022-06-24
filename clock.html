@@ -10,7 +10,7 @@
 			"format": "MMM DD, YYYY　HH:mm:ss",
 		};
 		let c = function () {
-			$("#output").text(moment().format(setData.format));
+			$("#datetime").text(moment().format(setData.format));
 		};
 		setInterval(c, 1000);
 	</script>
@@ -23,10 +23,9 @@
 			text-align: right;
 			margin: 0;
 			padding: 0;
-			/* background-color: #eee; */
 		}
 
-		div#container {}
+		div#datetime {}
 
 		div#output {
 			font-size: 12px;
@@ -43,12 +42,12 @@
 		}
 	</style>
 	<meta charset="UTF-8" />
-	<title>A simple clock</title>
+	<title>OBS Clock</title>
 </head>
 
 <body>
 	<div id="container">
-		<div id="output"></div>
+		<div id="datetime"></div>
 	</div>
 </body>
 
