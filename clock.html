@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
+	<script>
+		let setData = {
+			"format": "MMM DD, YYYY　HH:mm:ss",
+		};
+		let c = function () {
+			$("#output").text(moment().format(setData.format));
+		};
+		setInterval(c, 1000);
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+	<style>
+		body {
+			overflow: hidden;
+			text-align: right;
+			margin: 0;
+			padding: 0;
+			/* background-color: #eee; */
+		}
+
+		div#container {}
+
+		div#output {
+			font-size: 12px;
+			color: #fff;
+			font-family: 'Share Tech Mono', monospace;
+			letter-spacing: 0.3pt;
+			text-shadow: 0px 0px 5px rgb(0 0 0 / 50%), 0px 0px 2px rgb(0 0 0 / 50%);
+			height: 25px;
+			width: fit-content;
+			display: flex;
+			align-items: center;
+			justify-content: end;
+			padding: 5px 8px;
+		}
+	</style>
+	<meta charset="UTF-8" />
+	<title>A simple clock</title>
+</head>
+
+<body>
+	<div id="container">
+		<div id="output"></div>
+	</div>
+</body>
+
+</html>
