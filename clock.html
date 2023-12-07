@@ -7,7 +7,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
 	<script>
 		let setData = {
-			"format": "MMM DD, YYYY　HH:mm:ss",
+			"format": "YYYY MMM DD ddd HH:mm:ss",
+			// "format": "YYYY MM DD ddd HH:mm:ss",
 		};
 		let c = function () {
 			$("#datetime").text(moment().format(setData.format));
@@ -19,6 +20,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 	<style>
 		body {
+			background: #000;
 			overflow: hidden;
 			text-align: right;
 			margin: 0;
